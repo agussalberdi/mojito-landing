@@ -1,69 +1,77 @@
-# React + TypeScript + Vite
+# 🥭 Mojito Landing Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, animated landing page built with **React** and **GSAP (GreenSock Animation Platform)**. This project focuses on delivering a smooth, engaging user experience through custom scroll animations and minimalistic UI design.
 
-Currently, two official plugins are available:
+## 🚀 Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+👉 [mojito-landing-seven.vercel.app](https://mojito-landing-seven.vercel.app/)
 
-## Expanding the ESLint configuration
+## ✨ Features
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- ⚛️ Built with **React** (Vite setup)
+- 🎞️ Smooth scroll-based animations using **GSAP**
+- 💡 Clean, responsive design
+- 🌈 Custom section transitions
+- 🧼 Organized, reusable components
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 🛠️ Tech Stack
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+- **React**
+- **GSAP**
+- **Vite**
+- **CSS**
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## 📦 Getting Started
+
+Clone the repo and install dependencies:
+
+```bash
+git clone https://github.com/your-username/mojito-landing.git
+cd mojito-landing
+npm install
+````
+
+Run the development server:
+
+```bash
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Build for production:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm run build
 ```
+
+Preview production build:
+
+```bash
+npm run preview
+```
+
+## 📁 Project Structure
+
+```
+src/
+├── components/     # Reusable UI components
+├── assets/         # Images and media
+├── styles/         # Global styles (optional)
+├── App.jsx         # Main app file
+└── main.jsx        # Entry point
+```
+
+## 📚 Learning Goals
+
+This project helped me:
+
+* Get hands-on with **GSAP** animation timelines and scroll triggers
+* Improve structure and reusability in a React-based UI
+* Prepare for SSR/Next.js by focusing on animation and layout fundamentals
+
+## 🙌 Special Thanks
+
+This landing page was built as part of a course by **[JavaScript Mastery](https://jsmastery.pro/)**. Huge thanks to their team for providing such high-quality, practical content that helped me level up my frontend and animation skills.
+
+---
+
+Made with ❤️ by [Agustin](https://github.com/agussalberdi)
